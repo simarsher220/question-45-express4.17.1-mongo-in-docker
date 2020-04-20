@@ -185,7 +185,7 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 var get_lead_db_from_other_info = function(email, mobile, callback) {
-  Lead.findOne({email: email, mobile: mobile}).exec(function (err, lead) {
+  Lead.findOne({$or:[{email: email}, {mobile: mobile}]}).exec(function (err, lead) {
     if(err) {
       return callback(err, undefined);
     } else {
