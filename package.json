@@ -1,0 +1,26 @@
+{
+  "name": "express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.17.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mysql": "^2.18.1",
+    "random": "^2.2.0",
+    "body-parser": "~1.16.0",
+    "ejs": "~2.5.5",
+    "mongoose": "^4.8.4",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "sqlite3": "^4.1.1"
+  }
+}
